@@ -1,0 +1,219 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+*/
+
+a {
+    text-decoration: none;
+}
+
+.wrap_header {
+    width:1200px;
+    height:65px;
+    margin: 0 auto;
+    padding-top:25px;
+    div {
+        float:left;
+        margin-left:20px;
+        color: #3faab3;
+        font-size: 37px;
+        font-weight: 100;
+        span {
+            font-weight: bold;
+            display:inline-block;
+        }
+    }
+    div, ul {
+        display:inline-block;
+    }
+    
+    ul {
+        
+        float:right;
+        position: relative;
+        left:0px;
+        font-size:15px;
+        font-weight:bold;
+        margin-top:12px;
+        li {
+            
+            display:inline-block;
+            margin-left: 15px;
+            cursor:pointer;
+            
+            
+            a {
+                color:#b0b0b0;
+                &:hover, &.sel {
+                    color:#74c7ce;
+                }    
+            }
+        }
+    }
+}
+
+.wrap_introslide {
+    position:relative;
+    width:1200px;
+    height:400px;
+    margin:0 auto;
+    span {
+        position:absolute;
+        display:inline-block;
+        width:50px;
+        top:265px;
+        img {
+            width:50px;
+        }
+        &.left {
+            left: 35px;
+        }
+        &.right {
+            right: 35px;
+        }
+    }
+    .inner {
+        overflow: hidden;
+    }
+    ul {
+        position:relative;
+        width:3600px;
+        height:400px;
+        li {
+            float:left;
+            font-size:0;
+        }
+    }
+}
+
+.infocontainer {
+    width:1200px;
+    margin:0 auto;
+    
+    * {
+        font-family: 'Malgun Gothic';
+    }
+    h1 {
+        padding-top:60px;
+        padding-bottom: 30px;
+        text-align: center;
+        font-size:35px;
+    }
+    
+    h3 {
+        text-align: center;
+        font-size:14px;
+        font-weight: 300;
+    }
+    
+    .infobox {
+        margin-top:110px;
+        padding-bottom:35px;
+        li {
+            margin-bottom:95px;
+            height:150px;
+            img, .context {
+                float:left;
+                display:inline-block;
+            }
+            
+            img {
+                margin-left:140px;
+            }
+            
+            .context {
+                margin-left:103px;
+                font-weight:100;
+                h2 {
+                    font-size:22px;
+                    font-weight:bold;
+                    margin-top:15px;
+                    margin-bottom:20px;
+                }
+                
+                span {
+                    font-size:13px;
+                }
+            }
+        }
+    }
+    
+    .contactbox {
+        .box {
+            margin-top:50px;
+            display:inline-block;
+            float:left;
+            font-size:0;
+            width:360px;
+            height:400px;
+            
+            span {
+                display:block;
+                text-align:center;
+                font-size:23px;
+                font-weight:bold;
+                color:white;
+                margin-bottom:25px;
+            }
+            
+            input, textarea {
+                border:1px solid #2b8ba6;
+                width:348px;
+                padding:0;
+                margin:0;
+                padding-left:10px;
+                margin-bottom: 15px;
+            }
+            
+            input {
+                height:35px;
+            }
+            
+            input[type=button] {
+                width:360px;
+                padding:0;
+                border: 0px;
+                background-color:#2b8ba6;
+                height:40px;
+                font-size:23px;
+                font-weight:bold;
+                color:white;
+                margin-top:15px;
+            }
+        }
+    }
+}
+
+.wrap_footer {
+    width:1200px;
+    margin:0 auto;
+    margin-top:100px;
+    height:120px;
+    background-color:#3faab3;
+    
+    a {
+        text-decoration:none;
+        color:white;
+        display:inline-block;
+    }
+    
+    .left, .right {
+        h1 {
+            color:white;
+            font-size:40px;
+            font-weight:100;
+            span{
+                font-weight: bold;
+            }
+        }
+    }
+    
+    .left {
+        float:left;
+        padding: 25px 0 0 170px;
+    }
+    
+}
