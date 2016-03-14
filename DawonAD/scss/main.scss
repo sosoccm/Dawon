@@ -10,23 +10,73 @@ a {
     text-decoration: none;
 }
 
+.modal {
+    position: fixed;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index: 10;
+    
+    .container {
+        
+        width:1200px;
+        position:relative;
+        z-index: 10;
+        margin:0 auto;
+        height:500px;
+        top:50%;
+        margin-top:-250px;
+        
+        iframe {
+            border-radius: 25px;
+            border: 4px solid #73AD21;
+        }
+    }
+    
+}
+
+.top_contents {
+    font-family: 'Malgun Gothic';
+        background-color:#606060;
+        width:100%;
+        height:60px;
+        vertical-align: middle;
+        span {
+            background-color:#a7a7a7;
+            font-size:14px;
+            display:inline-block;
+            padding:9px;
+            color:white;
+            margin-top:13px;
+            
+            a {
+                color:white;
+            
+            }
+        }
+    }
 .wrap_header {
     width:1200px;
     height:65px;
     margin: 0 auto;
     padding-top:25px;
+    
+    
     div {
         float:left;
         margin-left:20px;
-        color: #3faab3;
         font-size: 37px;
         font-weight: 100;
+        a {
+            color: #3faab3;
+        }
         span {
             font-weight: bold;
             display:inline-block;
+            
         }
     }
-    div, ul {
+    div, ul,a {
         display:inline-block;
     }
     
@@ -64,7 +114,7 @@ a {
         position:absolute;
         display:inline-block;
         width:50px;
-        top:265px;
+        top:315px;
         img {
             width:50px;
         }
@@ -92,7 +142,7 @@ a {
 .infocontainer {
     width:1200px;
     margin:0 auto;
-    
+    margin-top:100px;
     * {
         font-family: 'Malgun Gothic';
     }
@@ -121,23 +171,40 @@ a {
             }
             
             img {
-                margin-left:140px;
+                margin-left:280px;
             }
             
             .context {
                 margin-left:103px;
                 font-weight:100;
                 h2 {
-                    font-size:22px;
+                    font-size:28px;
                     font-weight:bold;
                     margin-top:15px;
                     margin-bottom:20px;
                 }
                 
                 span {
-                    font-size:13px;
+                    font-size:16px;
+                    line-height:25px;
                 }
             }
+        }
+    }
+    
+    .inner_text {
+        position:relative;
+        
+        img {
+            position:relative;
+            z-index: 0;
+        }
+        
+        span {
+            display:block;
+            top:30px;
+            position:relative;
+            z-index: 1;
         }
     }
     
@@ -191,7 +258,7 @@ a {
     width:1200px;
     margin:0 auto;
     margin-top:100px;
-    height:120px;
+    height:95px;
     background-color:#3faab3;
     
     a {
@@ -213,7 +280,7 @@ a {
     
     .left {
         float:left;
-        padding: 25px 0 0 170px;
+        padding: 25px 0 0 10px;
     }
     
 }
